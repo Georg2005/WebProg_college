@@ -1,0 +1,207 @@
+/* Глобальне скидання */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Липка шапка */
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: white;
+  padding: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* Основний контейнер */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+
+  margin: 20px auto;
+  padding: 20px;
+
+  background-color: white;
+}
+
+/* Заголовки */
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Обтікання картинки */
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.float-img {
+  float: left;
+
+  width: 200px;
+
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  border-radius: 8px;
+}
+
+/* Скасування float */
+
+.clear {
+  clear: both;
+}
+
+/* Товари */
+
+.products {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product-item {
+  position: relative;
+
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+
+  border: 1px solid #ddd;
+
+  padding: 15px;
+  margin: 1%;
+
+  background-color: white;
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+
+  margin-bottom: 10px;
+
+  border-radius: 4px;
+}
+
+/* Бейдж */
+
+.badge {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  background-color: #e74c3c;
+  color: white;
+
+  padding: 5px 10px;
+
+  border-radius: 4px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  z-index: 10;
+}
+
+/* Кнопки товарів */
+
+.product-item button {
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  background-color: #28a745;
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+/* Додаткова секція */
+
+.info-section {
+  min-height: 600px;
+
+  padding: 30px;
+
+  background-color: #f8f8f8;
+}
+
+/* Кнопка Вгору */
+
+.back-to-top {
+  position: fixed;
+
+  bottom: 30px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #333;
+  color: white;
+
+  text-align: center;
+  line-height: 50px;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+  font-size: 24px;
+
+  opacity: 0.7;
+
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  background-color: #e67e22;
+}

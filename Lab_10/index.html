@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Позиціювання елементів</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top">
+    <!-- Липка шапка -->
+    <header class="main-header">
+      <h1>Мій вебсайт</h1>
+
+      <nav>
+        <a href="#about">Про нас</a>
+        <a href="#products">Товари</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Float -->
+      <section class="about-section" id="about">
+        <h2>Про нас</h2>
+
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6UeYqGUiqsD0c3NoRLZEW9F2iwDmI1FDU4hUZAYAa2I4aOps8gKBhzE&s=10"
+          alt="Про нашу компанію"
+          class="float-img"
+        />
+
+        <p>
+          Наша компанія займається продажем сучасних товарів та наданням якісних
+          послуг. Ми прагнемо створювати зручні рішення для наших клієнтів та
+          постійно вдосконалювати рівень обслуговування.
+        </p>
+
+        <p>
+          У нашому каталозі представлені різноманітні товари. Ми уважно стежимо
+          за якістю продукції та намагаємося пропонувати клієнтам найкращі
+          варіанти. Зображення розташоване зліва, а текст обтікає його справа
+          завдяки властивості float.
+        </p>
+
+        <p>
+          Використання обтікання дозволяє зручно розташовувати зображення
+          безпосередньо всередині текстового матеріалу.
+        </p>
+
+        <div class="clear"></div>
+      </section>
+
+      <!-- Картки товарів -->
+      <section class="products" id="products">
+        <h2>Наші товари</h2>
+
+        <div class="product-item">
+          <span class="badge">Sale</span>
+
+          <img src="https://via.placeholder.com/250x150" alt="Товар 1" />
+
+          <h3>Товар 1</h3>
+          <p>Короткий опис першого товару.</p>
+          <p><strong>500 грн</strong></p>
+
+          <button>Купити</button>
+        </div>
+
+        <div class="product-item">
+          <span class="badge">New</span>
+
+          <img src="https://via.placeholder.com/250x150" alt="Товар 2" />
+
+          <h3>Товар 2</h3>
+          <p>Короткий опис другого товару.</p>
+          <p><strong>750 грн</strong></p>
+
+          <button>Купити</button>
+        </div>
+
+        <div class="product-item">
+          <span class="badge">Sale</span>
+
+          <img src="https://via.placeholder.com/250x150" alt="Товар 3" />
+
+          <h3>Товар 3</h3>
+          <p>Короткий опис третього товару.</p>
+          <p><strong>900 грн</strong></p>
+
+          <button>Купити</button>
+        </div>
+      </section>
+
+      <!-- Додатковий контент для прокрутки -->
+      <section class="info-section" id="contacts">
+        <h2>Додаткова інформація</h2>
+
+        <p>
+          Цей блок додає сторінці висоти, щоб можна було перевірити роботу
+          липкого меню та фіксованої кнопки повернення вгору.
+        </p>
+
+        <p>
+          Під час прокручування сторінки меню залишається у верхній частині
+          вікна браузера, а кнопка "Вгору" залишається у правому нижньому куті.
+        </p>
+      </section>
+    </main>
+
+    <!-- Фіксована кнопка -->
+    <a href="#top" class="back-to-top">↑</a>
+  </body>
+</html>

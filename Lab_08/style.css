@@ -1,0 +1,70 @@
+/* Основні налаштування сторінки */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Заголовки */
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Абзаци */
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Шапка сайту */
+
+.main-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 3px solid #e67e22;
+}
+
+/* Основні секції */
+
+.about-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Навігаційне меню */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Ефект при наведенні */
+
+nav a:hover {
+  color: #e67e22;
+}

@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+}
+
+/* Основний контейнер */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Демонстрація Margin та Padding */
+
+.card {
+  background-color: #e0f7fa;
+  border: 2px solid #006064;
+  width: 300px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+/* Секція товарів */
+
+.products {
+  text-align: center;
+}
+
+/* Картки товарів */
+
+.product-item {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 1%;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+/* Зображення товару */
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Кнопка */
+
+.product-item button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-item button:hover {
+  background-color: #198838;
+  transition: 0.4s ease-in-out;
+}

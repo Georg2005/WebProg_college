@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Зв'яжіться з нами</title>
+  </head>
+  <body>
+    <h1>Лабораторна робота №7</h1>
+
+    <section>
+      <h2>Напишіть нам</h2>
+
+      <form action="#" method="POST">
+        <!-- Ім'я -->
+        <div>
+          <label for="username">Ваше ім'я:</label><br />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Введіть ім'я"
+            required
+          />
+        </div>
+
+        <br />
+
+        <!-- Email -->
+        <div>
+          <label for="useremail">Ваш Email:</label><br />
+          <input
+            type="email"
+            id="useremail"
+            name="useremail"
+            placeholder="example@mail.com"
+            required
+          />
+        </div>
+
+        <br />
+
+        <!-- Пароль -->
+        <div>
+          <label for="userpass">Пароль (для реєстрації):</label><br />
+          <input type="password" id="userpass" name="password" />
+        </div>
+
+        <br />
+
+        <!-- Повідомлення -->
+        <div>
+          <label for="message">Повідомлення:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="30"
+            placeholder="Введіть ваше повідомлення"
+          ></textarea>
+        </div>
+
+        <br />
+
+        <!-- Випадаючий список -->
+        <div>
+          <label for="topic">Тема звернення:</label>
+
+          <select id="topic" name="topic">
+            <option value="support">Техпідтримка</option>
+            <option value="sales">Відділ продажів</option>
+            <option value="other">Інше</option>
+          </select>
+        </div>
+
+        <br />
+
+        <!-- Радіокнопки -->
+        <div>
+          <p>Ваша стать:</p>
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Чоловік</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Жінка</label>
+        </div>
+
+        <br />
+
+        <!-- Checkbox -->
+        <div>
+          <input type="checkbox" id="agree" name="agree" required />
+
+          <label for="agree"> Я даю згоду на обробку даних </label>
+          <input type="checkbox" id="disagree" name="disagree" required />
+
+          <label for="disagree"> Я не даю згоди на обробку даних </label>
+        </div>
+
+        <br />
+
+        <!-- Кнопки -->
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </form>
+    </section>
+  </body>
+</html>
