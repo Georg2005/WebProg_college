@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>MyWebSite</h1>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#services">Послуги</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+    <button id="open-modal-btn">Зв'язатися з нами</button>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <h2>Ласкаво просимо на наш сайт!</h2>
+        <p>Ми пропонуємо сучасні рішення у сфері веброзробки.</p>
+    </section>
+
+    <section class="tabs-container" id="services">
+        <h2>Наші послуги</h2>
+
+        <div class="tabs-header">
+            <button class="tab-btn active" data-tab="desc">Опис</button>
+            <button class="tab-btn" data-tab="chars">Характеристики</button>
+            <button class="tab-btn" data-tab="reviews">Відгуки</button>
+        </div>
+
+        <div class="tabs-body">
+            <div id="desc" class="tab-content active">
+                <h3>Опис послуг</h3>
+                <p>Ми займаємося розробкою адаптивних вебсайтів,
+                створенням дизайну та технічною підтримкою.</p>
+            </div>
+
+            <div id="chars" class="tab-content">
+                <h3>Характеристики</h3>
+                <ul>
+                    <li>Адаптивний дизайн</li>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Інтерактивні елементи</li>
+                    <li>Оптимізація швидкості</li>
+                </ul>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <h3>Відгуки</h3>
+                <p>У цьому розділі розміщуватимуться
+                відгуки клієнтів про наші послуги.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <h2>Контакти</h2>
+        <p>Для зв'язку скористайтеся формою у верхній частині сайту.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 MyWebSite. Усі права захищено.</p>
+</footer>
+
+<!-- Модальне вікно -->
+<div class="modal-overlay" id="my-modal">
+    <div class="modal-window" role="dialog"
+         aria-modal="true" aria-labelledby="modal-title">
+
+        <button class="close-modal" aria-label="Закрити">&times;</button>
+
+        <h2 id="modal-title">Залиште заявку</h2>
+
+        <form id="contact-form">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="tel" placeholder="Ваш телефон" required>
+            <button type="submit">Надіслати</button>
+        </form>
+
+        <p id="form-message" role="status"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
